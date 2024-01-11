@@ -1,6 +1,8 @@
 package TCSNQT_CODING;
 
 
+import java.util.* ;
+
 /**
    Tina was given a piece of silk cloth.
    There are already a few points or coordinates mentioned on it.
@@ -23,9 +25,9 @@ package TCSNQT_CODING;
    (2,0) & (0,2)
    OR
    (3,0) & (0,3)
-   Tina doesn’t want to lose a good deal here, so better if she would go with (3,0) & (0,3).
-   Hence 2 additional coordinates were required to cut a perfect square from that piece of cloth.
-   Hence the answer is 2
+   Tina does not want to lose a good deal here, so better if she would go with (3,0) & (0,3).
+   Hence, 2 additional coordinates were required to cut a perfect square from that piece of cloth.
+   Hence, the answer is 2
 
    Example 1:
 
@@ -56,13 +58,25 @@ package TCSNQT_CODING;
    Output:
    2 -> Output
    Explanation:
-   In the above scenario, we can have 2 additional co-ordinates:
+   In the above scenario, we can have 2 additional coordinates:
    (20)&(0,2)
    OR
-   (3,0)&(0.3)
-   Tina doesn’t want to lose a good deal here so better if she would go with (3,0), (0,3).
-   Hence 2 additional co-ordinates were required to cut a perfect square from that piece of cloth.
-   Hence the answer is 2.
+   (3,0) & (0,3)
+   Tina does not want to lose a good deal here so better if she would go with (3,0), (0,3).
+   Hence, 2 additional coordinates were required to cut a perfect square from that piece of cloth.
+   Hence, the answer is 2.
  */
 public class QUES_10 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int N = scanner.nextInt(); // Number of points
+        int[][] coordinates = new int[N][2];
+
+        for (int i = 0; i < N; i++) {
+            coordinates[i][0] = scanner.nextInt();
+            coordinates[i][1] = scanner.nextInt();
+        }
+    }
+}
+class solution_Ques_10 {
 }
