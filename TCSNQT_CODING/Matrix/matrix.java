@@ -13,9 +13,9 @@ public class matrix {
     public static void main(String[] args) {
         Solution_Matrix_6 object = new Solution_Matrix_6() ;
         object.inverseOfMat(new int[][]{
-                {1, 2, 10} ,
-                {7, 1, 6} ,
-                {9, 8, 9}
+                {0 , 0 , 1} ,
+                {9, 14 , 2} ,
+                {5 , 8 , 3}
         });
     }
 }
