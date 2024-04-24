@@ -9,7 +9,7 @@ public class QUES_5 {
             return "" ;
         String subStr = strs[0] ;
 
-        for (int i = 0 ; i < strs.length ; i ++){
+        for (int i = 0 ; i < strs.length ; i ++) {
             String s = strs[i] ;
             while (s.indexOf(subStr) != 0) {
                 subStr = subStr.substring(0 , subStr.length() - 1) ;
