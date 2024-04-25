@@ -13,9 +13,9 @@ public class matrix {
     public static void main(String[] args) {
         Solution_Matrix_6 object = new Solution_Matrix_6() ;
         object.inverseOfMat(new int[][]{
-                {0 , 0 , 1} ,
-                {9, 14 , 2} ,
-                {5 , 8 , 3}
+                {0, 0, 2} ,
+                {3, 4, 8} ,
+                {7, 1, 2}
         });
     }
 }
@@ -49,8 +49,8 @@ class Solution_Matrix_6 {
         int C2 = B[0].length ;
         // Assuming, C1 == R2
         int[][] answer = new int[R1][C2] ;
-        for (int i = 0 ; i < R1 ; i ++){
-            for (int j = 0 ; j < C2 ; j ++){
+        for (int i = 0 ; i < R1 ; i ++) {
+            for (int j = 0 ; j < C2 ; j ++) {
                 int sum = 0 ;
                 for (int k = 0 ; k < C2 ; k ++){
                     sum += A[i][k] * B[k][j] ;
@@ -105,7 +105,7 @@ class Solution_Matrix_6 {
     }
     private void adjOfMat(int[][] A , int[][] adj , int n){
         if (n == 1) {
-            adj[0][0] = 1 ;
+            adj[0][0] = A[0][0] ;
             return ;
         }
         int sign = 1 ;
@@ -114,7 +114,7 @@ class Solution_Matrix_6 {
             for (int j = 0 ; j < n ; j ++){
                 getCofactor(A , cofactorMat , i , j , n);
                 sign = ((i + j) % 2 == 0) ? 1 : -1 ; // ***
-                adj[j][i] = (sign) * detOfMatrix(cofactorMat , n-1) ;
+                adj[j][i] = (sign) * detOfMatrix(cofactorMat , n-1) ; // ** inline transpose
             }
         }
     }
