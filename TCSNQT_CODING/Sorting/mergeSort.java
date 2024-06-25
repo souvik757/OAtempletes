@@ -44,4 +44,5 @@ public class mergeSort {
             merge(arr, l,  m, h);
         }
     }// O(n log n) - all
+    // O(n) space
 }

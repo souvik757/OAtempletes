@@ -20,4 +20,5 @@ public class selectionSort {
 
         return arr ;
     }// O(n*n) - all
+    // O(1) - space
 }

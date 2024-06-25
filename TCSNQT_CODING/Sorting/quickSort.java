@@ -33,4 +33,5 @@ public class quickSort {
             sort(arr , pivot + 1 , end);
         }
     }// O(n*n) - worst case O(n log n) - rest
+    // O(log n) - best , avg O(n) - worst
 }

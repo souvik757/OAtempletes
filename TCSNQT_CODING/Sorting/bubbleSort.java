@@ -16,7 +16,8 @@ public class bubbleSort {
                     arr[j] = temp ;
                 }
             }
-        }
+        }// O(n) - best O(n*n) - rest
+        // O(1) space
         return arr ;
     }
 }

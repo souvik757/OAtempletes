@@ -17,6 +17,7 @@ public class insertionSort {
             }
             arr[j + 1] = key ;
         }// O(n) - best , O(n*n) - rest
+        // O(1) - space
 
         return arr ;
     }
