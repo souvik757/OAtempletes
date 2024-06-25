@@ -1,9 +1,10 @@
 package TCSNQT_CODING.Sorting;
 
 import java.util.Arrays ;
+// Recursively splits the array into halves, sorts each half, and then merges the sorted halves back together.
 public class mergeSort {
     public static void main(String[] args) {
-        int arr[] = {4,3,2,1};
+        int[] arr = new int[] {4,3,2,1};
         sort(arr,0,arr.length -1);
         System.out.println(Arrays.toString(arr));
     }

@@ -2,6 +2,8 @@ package TCSNQT_CODING.Sorting;
 
 import java.util.Arrays;
 
+// Iteratively takes the next unsorted element and
+// inserts it into the correct position within the sorted portion of the array.
 public class insertionSort {
     public static void main(String[] args) {
         int[] arr = ArrayExample.num ;

@@ -1,7 +1,9 @@
 package TCSNQT_CODING.Sorting;
 
 import java.util.Arrays;
-
+//Repeatedly steps through the list,
+// compares adjacent elements, and swaps them if they are in the wrong order,
+// effectively "bubbling" the largest unsorted element to its correct position.
 public class bubbleSort {
     public static void main(String[] args) {
         System.out.println(Arrays.toString(sort(new int[]{5,4,-1,0,3,2,1})));

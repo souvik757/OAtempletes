@@ -2,6 +2,10 @@ package TCSNQT_CODING.Sorting;
 
 import java.util.Arrays;
 
+//Selects a 'pivot' element,
+// partitions the array into elements less than and greater than the pivot,
+// and recursively sorts the partitions.
+
 public class quickSort {
     public static void main(String[] args) {
         int[] arr = ArrayExample.num ;

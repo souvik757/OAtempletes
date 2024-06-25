@@ -2,6 +2,7 @@ package TCSNQT_CODING.Sorting;
 
 import java.util.Arrays;
 
+// Repeatedly finds the minimum element from the unsorted part and swaps it with the first unsorted element.
 public class selectionSort {
     public static void main(String[] args) {
         int[] arr = ArrayExample.num ;

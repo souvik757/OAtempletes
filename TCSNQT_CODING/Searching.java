@@ -13,6 +13,12 @@ public class Searching {
 
         return -1 ;
     }
+    /*
+    Repeatedly divides the sorted array in half,
+    comparing the middle element to the target value,
+    and recursively or iteratively narrowing the search to the half where the target must lie,
+    until the target is found or the sub-array size is zero.
+     */
     private static int hasByBinary(int[] arr , int target){
         int s = 0 ;
         int l = arr.length - 1 ;
